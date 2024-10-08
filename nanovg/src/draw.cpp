@@ -93,6 +93,7 @@ void DebugDraw::DrawPolygon(const b2Vec2* vertices, int32 vertexCount, const b2C
 		
 		nvgMoveTo(ctx,center.x*meter,center.y*meter);
 		nvgLineTo(ctx,p.x*meter,p.y*meter);
+		nvgCircle(ctx,center.x*meter,center.y*meter,radius*meter);
 		nvgStrokeColor(ctx,rgba(color));
 		nvgStroke(ctx);
 		
