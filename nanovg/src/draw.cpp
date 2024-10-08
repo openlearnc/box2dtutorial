@@ -84,6 +84,8 @@ void DebugDraw::DrawPolygon(const b2Vec2* vertices, int32 vertexCount, const b2C
 		nvgCircle(ctx,center.x*meter,center.y*meter,radius*meter);
 		
 		nvgFillColor(ctx,rgba(fillcolor));
+
+		nvgFill(ctx);
 		
 		b2Vec2 p = center + radius*axis;
 		
